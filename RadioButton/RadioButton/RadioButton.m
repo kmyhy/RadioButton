@@ -96,7 +96,7 @@
 //    oldTitleColor = self.lbTitle.textColor;
 //    self.lbTitle.textColor = [UIColor colorWithHex:0xdddddd];
 //}
--(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     CGPoint point = [[touches anyObject] locationInView:self];
     // 将触摸点坐标转换为 ivIcon 上的坐标
     point = [_ivIcon.layer convertPoint:point fromLayer:self.layer];
